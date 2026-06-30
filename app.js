@@ -25,7 +25,6 @@ app.get("/sign", function(req, res){
 app.get("/landing", function(req, res){
     res.render("landing")
 })
-
 // 2. Handle Registration (POST)
 app.post('/create', async (req, res) => {
     let { username, email, password, age } = req.body;
@@ -44,7 +43,7 @@ app.post('/create', async (req, res) => {
             });
 
             // Issue JWT token upon registration completion
-            let token = jwt.sign({ email: createdUser.email }, "shhhhhsecretkey");
+            let token = jwt.sign({ email: createdUser.email }, "secret_key");
             res.cookie("token", token);
             res.send(createdUser);
         });
@@ -68,7 +67,7 @@ app.post('/login', async (req, res) => {
     bcrypt.compare(password, user.password, (err, result) => {
         if (result) {
             // If match, sign a new JWT token and store inside cookies
-            let token = jwt.sign({ email: user.email }, "shhhhhsecretkey");
+            let token = jwt.sign({ email: user.email }, "secret_key");
             res.cookie("token", token);
             // res.send("Yes, you can login.");
             res.render("landing")
