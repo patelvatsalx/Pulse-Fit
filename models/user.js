@@ -1,9 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-// Connecting to local MongoDB instance
-mongoose.connect("mongodb://127.0.0.1:27017/Workout_auth");
-
-const userSchema = mongoose.Schema({
+const userSchema = new mongoose.Schema({
     username: {
         type: String,
         required: true
@@ -20,4 +17,4 @@ const userSchema = mongoose.Schema({
     age: Number
 });
 
-module.exports = mongoose.model('user', userSchema);
+module.exports = mongoose.model("User", userSchema);

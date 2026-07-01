@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulseFit | Premium Personal Workout Platform</title>
+  <meta name="description"
+    content="Transform your body and mind with PulseFit. Personalized workouts, progress tracking, and daily motivation. Start your fitness journey today.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       HEADER / NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container">
+      <a href="#" class="logo">PULSE<span class="accent-text">FIT</span><span class="logo-dot"></span></a>
+
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link active">Home</a></li>
+        <li><a href="#programs" class="nav-link">Programs</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#testimonials" class="nav-link">Contact</a></li>
+        <button onclick="window.location.href='/sign'" class="btn btn-primary header-btn">
+          Start Training
+        </button>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero section-padding">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-heading text-gradient">Transform Your Body.<br>Transform Your Life.</h1>
+          <p class="hero-subtitle">Train smarter, stay consistent, and become unstoppable with personalized routines and
+            analytics designed to elevate your performance.</p>
+          <div class="hero-actions">
+            <a href="landing" class="btn btn-primary">Start Training</a>
+            <a href="#programs" class="btn btn-secondary">Explore Programs</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-glow-element"></div>
+          <div class="hero-image-container">
+            <img src="assets/hero_fitness.png" alt="Athlete training in modern dark gym" class="hero-image"
+              loading="eager">
+            <div class="hero-image-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MOTIVATION QUOTE SECTION
+       ========================================== -->
+  <section class="quote-section section-padding">
+    <div class="container">
+      <div class="quote-card glass-card">
+        <span class="quote-icon">“</span>
+        <blockquote class="quote-text text-gradient">The pain you feel today will be the strength you feel tomorrow.
+        </blockquote>
+        <cite class="quote-author">— Arnold Schwarzenegger</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FEATURES SECTION ("WHY CHOOSE US")
+       ========================================== -->
+  <section id="about" class="features-section section-padding">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us</h2>
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card glass-card glow-shadow">
+          <div class="feature-icon-box">
+            <!-- 🏋️ Icon replacement SVG -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.5 4h-2a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5Zm-17 0h-2a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5ZM18 10h-2.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5H18a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5Zm-12 0H3.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5H6a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5Zm13-3h-14a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1Zm-1 8H6V9h12v6Z" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+          </div>
+          <h3 class="feature-title">🏋️ Personalized Workouts</h3>
+          <p class="feature-desc">Get customized routines tailored specifically to your body type, fitness level, and
+            long-term athletic goals.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card glass-card glow-shadow">
+          <div class="feature-icon-box">
+            <!-- 📈 Icon replacement SVG -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Zm0 16H5V5h14v14ZM7 10h2v7H7v-7Zm4-3h2v10h-2V7Zm4 6h2v4h-2v-4Z" />
+            </svg>
+          </div>
+          <h3 class="feature-title">📈 Daily Challenges</h3>
+          <p class="feature-desc">Daily Challenges helps you to acheive results faster and get in shape easily with Training guide.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card glass-card glow-shadow">
+          <div class="feature-icon-box">
+            <!-- 🔥 Icon replacement SVG -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm1 15h-2v-6h2v6Zm0-8h-2V7h2v2Z" />
+            </svg>
+          </div>
+          <h3 class="feature-title">🔥 Online Plattform Motivations</h3>
+          <p class="feature-desc">Build ironclad discipline, break dynamic challenge plateaus, and develop life-changing
+            healthy habits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WORKOUT CATEGORIES SECTION
+       ========================================== -->
+  <section id="programs" class="categories-section section-padding">
+    <div class="container">
+      <h2 class="section-title">Workout Categories</h2>
+      <div class="categories-grid">
+        <!-- Category 1 -->
+        <div class="category-card glow-shadow">
+          <div class="category-icon-wrapper">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21 9h-2.1c-.2-.6-.5-1.2-.9-1.7l1.5-1.5c.4-.4.4-1 0-1.4s-1-.4-1.4 0l-1.5 1.5c-.5-.4-1.1-.7-1.7-.9V3c0-.6-.4-1-1-1s-1 .4-1 1v2.1c-.6.2-1.2.5-1.7.9L9.7 4.5c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l1.5 1.5c-.4.5-.7 1.1-.9 1.7H7c-.6 0-1 .4-1 1s.4 1 1 1h2.1c.2.6.5 1.2.9 1.7l-1.5 1.5c-.4.4-.4 1 0 1.4.2.2.5.3.7.3s.5-.1.7-.3l1.5-1.5c.5.4 1.1.7 1.7.9V21c0 .6.4 1 1 1s1-.4 1-1v-2.1c.6-.2 1.2-.5 1.7-.9l1.5 1.5c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4l-1.5-1.5c.4-.5.7-1.1.9-1.7H21c.6 0 1-.4 1-1s-.4-1-1-1ZM12 15c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3Z" />
+            </svg>
+          </div>
+          <h3 class="category-title">Strength Training</h3>
+          <p class="category-desc">Build massive power, compound lifts performance, and dense bone density with
+            progressive overloading techniques.</p>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="category-card glow-shadow">
+          <div class="category-icon-wrapper">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 23c.1 0 .3 0 .4-.1.4-.1.8-.4 1-.8C14.7 20 18 16.5 18 12.3c0-3.3-2.7-6-6-6s-6 2.7-6 6c0 4.2 3.3 7.7 4.6 9.8.2.4.6.7 1 .8.1.1.3.1.4.1Zm-4-10.7c0-2.2 1.8-4 4-4s4 1.8 4 4c0 2.8-2.2 5.5-4 7.4-1.8-1.9-4-4.6-4-7.4Z" />
+            </svg>
+          </div>
+          <h3 class="category-title">Fat Loss</h3>
+          <p class="category-desc">Accelerate calorie burn and elevate metabolic rate both during and hours after
+            high-intensity cardiovascular sessions.</p>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="category-card glow-shadow">
+          <div class="category-icon-wrapper">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.5 11C9.43 11 11 9.43 11 7.5S9.43 4 7.5 4 4 5.57 4 7.5 5.57 11 7.5 11Zm0-5c1.38 0 2.5 1.12 2.5 2.5S8.88 11 7.5 11 5 9.88 5 8.5 6.12 6 7.5 6Zm9 8c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4Zm6 4H10.5v-.9c.7-1.2 3.1-2.1 6-2.1s5.3 1 6 2.1v.9Z" />
+            </svg>
+          </div>
+          <h3 class="category-title">Muscle Building</h3>
+          <p class="category-desc">Maximize muscular hypertrophy, symmetrical definition, and functional mass through
+            target hyper-focused isolation movements.</p>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="category-card glow-shadow">
+          <div class="category-icon-wrapper">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm-1-13h2v6h-2V7Zm0 8h2v2h-2v-2Z" />
+            </svg>
+          </div>
+          <h3 class="category-title">Cardio Fitness</h3>
+          <p class="category-desc">Boost your VO2 max, cardiovascular endurance, and resting heart health via optimized
+            dynamic pacing challenges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DAILY CHALLENGE SECTION
+       ========================================== -->
+  <section class="challenge-section section-padding">
+    <div class="container">
+      <div class="challenge-card glass-card">
+        <div class="challenge-grid">
+          <div class="challenge-info">
+            <h3>Daily Challenge</h3>
+            <h2 class="challenge-title text-gradient">Today's Challenge</h2>
+            <ul class="challenge-list" id="challengeList">
+              <li class="challenge-item">Loading today’s challenge…</li>
+            </ul>
+            <div class="challenge-meta" id="challengeMeta"></div>
+          </div>
+          <div class="challenge-badge-container">
+            <div class="challenge-badge">
+              <span class="badge-text accent-text">No Excuses.<br>Just Results.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TRANSFORMATION TESTIMONIALS
+       ========================================== -->
+  <section id="testimonials" class="testimonials-section section-padding">
+    <div class="container">
+      <h2 class="section-title">Transformation Testimonials</h2>
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar-wrapper">
+              <img src="assets/avatar1.png" alt="Marcus Thompson avatar" class="testimonial-avatar">
+            </div>
+            <div class="testimonial-user-info">
+              <h4>Marcus Thompson</h4>
+              <span class="testimonial-tag">Lost 12kg</span>
+            </div>
+          </div>
+          <p class="testimonial-quote">"Lost 12kg in 6 months. This platform changed my life. The personalized workouts
+            were super easy to follow and kept me consistent."</p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar-wrapper">
+              <img src="assets/avatar2.png" alt="Sarah Jenkins avatar" class="testimonial-avatar">
+            </div>
+            <div class="testimonial-user-info">
+              <h4>Sarah Jenkins</h4>
+              <span class="testimonial-tag">Lean Muscle Gain</span>
+            </div>
+          </div>
+          <p class="testimonial-quote">"The progress tracking feature is incredible. Seeing my strength lift graphs go
+            up week after week kept me highly motivated through plateaus!"</p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar-wrapper">
+              <img src="assets/avatar3.png" alt="David Rivera avatar" class="testimonial-avatar">
+            </div>
+            <div class="testimonial-user-info">
+              <h4>David Rivera</h4>
+              <span class="testimonial-tag">Endurance Boost</span>
+            </div>
+          </div>
+          <p class="testimonial-quote">"The daily challenge became my obsession. Replaced bad habits with consistent
+            15-minute high impact routines. Recommend to everyone."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CTA SECTION
+       ========================================== -->
+  <section id="cta" class="cta-section section-padding">
+    <div class="cta-container">
+      <div class="cta-card">
+        <h2 class="cta-heading text-gradient">Your Future Self Will Thank You.</h2>
+        <p class="cta-subtitle">Don't wait for the 'perfect' moment. Start building consistency and discipline today.
+          Your body, your rules.</p>
+        <!-- <a href="landing.html" class="btn btn-primary cta-btn">Begin Your Journey</a> -->
+        <button onclick="window.location.href='/sign'" class="btn btn-primary cta-btn">
+          Begin Your Journey
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <a href="#" class="logo">PULSE<span class="accent-text">FIT</span><span class="logo-dot"></span></a>
+        <ul class="footer-nav">
+          <li><a href="#" class="footer-link">Home</a></li>
+          <li><a href="#programs" class="footer-link">Programs</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#testimonials" class="footer-link">Contact</a></li>
+        </ul>
+        <div class="footer-copyright">
+          &copy; 2026 Developed and Maintained by
+          <a href="https://vpatel-portfolio.web.app/" target="_blank" class="footer-link">
+            Vatsal Patel
+          </a>.
+          Made for fitness enthusiasts worldwide.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js" defer></script>
+</body>
+
+</html>
