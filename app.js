@@ -98,3 +98,13 @@ app.get("/delete", async function(req, res){
     let deluser = await userModel.deleteMany()
     res.send(userModel.username + "User Deleted")
 })
+
+const PORT = process.env.PORT || 3000;
+
+if (!process.env.VERCEL) {
+    app.listen(PORT, () => {
+        console.log(`Server running on port ${PORT}`);
+    });
+}
+
+module.exports = app;
